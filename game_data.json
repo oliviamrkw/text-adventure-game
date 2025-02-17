@@ -1,0 +1,311 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Dorm Room",
+      "brief_description": "Your room is a mess. Clothes are scattered all around. There's a box in the corner, and a few loose papers on the desk. The door is to the east.",
+      "long_description": "You are in your dorm room. \n\nYour room is a mess. Clothes are scattered all around. There's a box in the corner, and a few loose papers on the desk. The door is to the east.\n\n",
+      "available_commands": {
+        "check clothes": "You find a pencil in your jacket pocket (1 dmg), and a piece of candy (+1hp).",
+        "check box": "You find a $5 bill.",
+        "check papers": "Papers from the CRA for tax fraud. Also a blue membership card.",
+        "go east": 2
+      },
+      "items": ["pencil", "candy", "$5 bill", "membership card"]
+    },
+    {
+      "id": 2,
+      "name": "Outside Robarts",
+      "brief_description": "You are outside Robarts. A group of people is standing outside the library.",
+      "long_description": "You are outside Robarts. There's lots of construction on the roads. There's a group of people standing outside the library, talking animatedly. The entrance is to the east.",
+      "available_commands": {
+        "go east": 3,
+        "talk to the people outside": "You overhear them talking.",
+        "cross the road": "You cross the road and get run over and pass out."
+      },
+      "items": []
+    },
+    {
+      "id": 3,
+      "name": "Inside Robarts",
+      "brief_description": "You are inside Robarts. The elevator is to the North and can take you up to the second, third, or fourth floor. The exit is back West.",
+      "long_description": "You are inside Robarts. There are students chatting in the lobby. The elevator is to the North and can take you up to the second, third, or fourth floor. The exit is back West.",
+      "available_commands": {
+        "go north": 4,
+        "go west": 2
+      },
+      "items": []
+    },
+    {
+      "id": 4,
+      "name": "Second Floor of Robarts",
+      "brief_description": "You take the elevators to the second floor of Robarts. There is a huge line at Starbucks, and the menu looks tempting.",
+      "long_description": "You take the elevators to the second floor of Robarts. There is a sizeable line at Starbucks, and the menu looks tempting. There are more elevators to the North that will take you up another floor, and the ones to the South will take you back down.",
+      "available_commands": {
+        "wait in line": "The menu: Matcha Latte - $1, Brown Sugar Espresso - $2, Tea for Lions - $5.",
+        "go north": 5,
+        "go south": 3
+      },
+      "items": ["matcha latte", "brown sugar espresso", "tea for lions"]
+    },
+    {
+      "id": 5,
+      "name": "Third Floor of Robarts",
+      "brief_description": "You take the elevators to the third floor of Robarts. One person is studying, one is sleeping, and another is on the phone.",
+      "long_description": "You take the elevators to the third floor of Robarts. One person is studying, one is sleeping, and another is on the phone. Best not to disturb them... There are more elevators to the North that will take you up another floor, and the ones to the South will take you back down.",
+      "available_commands": {
+        "talk to the person studying": "They are too busy to help you right now.",
+        "investigate the sleeping person": "You notice a $20 bill sticking out of their pocket. Do you take it? (yes/no)",
+        "talk to the person on the phone": "No, dad, the doctors said it was not normal to have a rash on my... (they whisper something into the phone). You go outside awkwardly",
+        "go north": 6,
+        "go south": 4
+      },
+      "items": []
+    },
+    {
+      "id": 6,
+      "name": "Fourth Floor of Robarts",
+      "brief_description": "You take the elevators to the fourth floor of Robarts. One person is studying, two are talking, and another is typing furiously on their computer.",
+      "long_description": "You take the elevators to the fourth floor of Robarts. One person is studying, two are in deep conversation, and another is typing furiously on their computer. There are elevators to the South that will take you back down.",
+      "available_commands": {
+        "talk to the person studying": "They ask: Hey, can you help me review for my csc110 test? (yes/no)",
+        "talk to the people talking": "You overhear: And then I told him it was not normal to have a crush on your brother! Can you believe that?",
+        "talk to the person on the computer": "He looks sketchy and has a USB plugged into his computer. Do you ask him about it? (yes/no)",
+        "go south": 5
+      },
+      "items": ["sword"]
+    },
+    {
+      "id": 7,
+      "name": "Bahen 1F",
+      "brief_description": "You are on the first floor of the Bahen Center.",
+      "long_description": "You are on the first floor of the Bahen Center. It's typically crowded, but today it's a bit quieter. There is someone staring very intently at you. There are stairs to the South that will take you up a floor, and the exit is back North.",
+      "available_commands": {
+        "go south": 8,
+        "talk to the staring person": "He whispers... do not go to the second floor... and leaves hurriedly.",
+        "go north": 9
+      },
+      "items": []
+    },
+    {
+      "id": 8,
+      "name": "Bahen 2F",
+      "brief_description": "You are on the second floor of Bahen. There are... lions here... what? They seem to be guarding something.",
+      "long_description": "You are on the second floor of Bahen. There are... lions here... what? They seem to be guarding something... you look closer, and... you notice your laptop charger in the corner! Getting close to it might be tricky... There are stairs to the North that will take you to the main floor.",
+      "available_commands": {
+        "go north": 9,
+        "look around": "You observe your surroundings, trying to think of what to do? Maybe an item, or a plan?",
+        "sneak past the lions": "You try to sneak past, but the lions growl at you. You back away.",
+        "fight the lions": "You attack the lions."
+      },
+      "items": ["laptop charger"]
+    },
+    {
+      "id": 9,
+      "name": "Outside Bahen",
+      "brief_description": "You are outside Bahen.",
+      "long_description":  "You are outside Bahen. You are a bit hungry after all that commotion, and you notice the food trucks outside. There is a red one and a blue one.",
+      "available_commands": {
+        "visit the red truck": "Merchant: Have a gander at our new white powder for $5! (+1 dmg for one turn. +1 hp for one turn.) (yes/no)",
+        "visit the blue truck": "Merchant: I have some gifts for ya... but only if you have yer card of membership.",
+        "cross the road": "Now that you have most of your items, you are determined to get your lucky UofT mug back. You cross the road and get run over and pass out..."
+      },
+      "items": ["sugar", "uoft hoodie", "a very sharp stick"]
+    },
+    {
+      "id": 10,
+      "name": "Fight",
+      "brief_description": "You are in combat",
+      "long_description": "You are in combat",
+      "available_commands": {},
+      "items": []
+    },
+    {
+      "id": 11,
+      "name": "Blue Room",
+      "brief_description": "You are in a room with blue walls. There is a door to the East, and to the North.",
+      "long_description": "You go back to your dorm room... but wait! Your room is gone!\n\nYou are now in a blue room. You look around. There is an unlit torch on the floor. There is a pedestal in the middle of the room. \nThere is a door to the East, and to the North.",
+      "available_commands": {
+        "inspect pedestal": "The pedestal is empty. It seems you can USE an item on it to place it.",
+        "inspect torch": "You pick up the torch. It's a bit heavy. There doesn't seem to be any way to light it. The roman numeral V is engraved on it... interesting",
+        "go east": 12,
+        "go north": 14
+      },
+      "items": ["torch"]
+    },
+    {
+      "id": 12,
+      "name": "Yellow Room",
+      "brief_description": "You are in a room with yellow walls. There is a door to the West, and to the North.",
+      "long_description": "You look around. You are in a room with yellow walls. There is an open book on the floor. There is a pedestal in the middle of the room. \nThere is a door to the West, and to the North.",
+      "available_commands": {
+        "inspect pedestal": "The pedestal is empty. It seems you can USE an item on it to place it.",
+        "inspect book": "You pick up the book. It has the number 4 written on it. The title reads: 'Colours and Words'.",
+        "go west": 11,
+        "go north": 13
+      },
+      "items": ["book"]
+    },
+    {
+      "id": 13,
+      "name": "Purple Room",
+      "brief_description": "You are in a room with purple walls. There is a door to the West, and to the South.",
+      "long_description": "You look around. You are in a room with purple walls. There is a big metal shield on the ground. There is a pedestal in the middle of the room. There is a door to the West, and to the South.",
+      "available_commands": {
+        "inspect pedestal": "The pedestal is empty. It seems you can USE an item on it to place it.",
+        "inspect shield": "You pick up the shield. It's heavy. There are 6 scratch marks on it.",
+        "go west": 14,
+        "go south": 12
+      },
+      "items": ["shield"]
+    },
+    {
+      "id": 14,
+      "name": "Green Room",
+      "brief_description": "You are in a room with green walls. There is a door to the East, and to the South.",
+      "long_description": "You look around. You are in a room with green walls. There is a plump orange on the floor. There is a pedestal in the middle of the room. \nThere is a door to the East, and to the South.",
+      "available_commands": {
+        "inspect pedestal": "The pedestal is empty. It seems you can USE an item on it to place it.",
+        "inspect orange": "You pick up the orange. It's a bit squishy.",
+        "go east": 13,
+        "go south": 11
+      },
+      "items": ["orange"]
+    }
+  ],
+  "items": [
+    {
+      "name": "pencil",
+      "description": "A pencil. Does 1 damage.",
+      "start_position": 1,
+      "target_position": 0,
+      "target_points": 1
+    },
+    {
+      "name": "candy",
+      "description": "A piece of candy. Eating it restores 1 HP.",
+      "start_position": 1,
+      "target_position": 0,
+      "target_points": 0
+    },
+    {
+      "name": "$5 bill",
+      "description": "A $5 bill.",
+      "start_position": 1,
+      "target_position": 0,
+      "target_points": 1
+    },
+    {
+      "name": "membership card",
+      "description": "A blue membership card.",
+      "start_position": 1,
+      "target_position": 0,
+      "target_points": 1
+    },
+    {
+      "name": "sword",
+      "description": "A sword. Does 50 damage.",
+      "start_position": 6,
+      "target_position": 0,
+      "target_points": 5
+    },
+    {
+      "name": "tea for lions",
+      "description": "Yummy tea for lions. It puts them right to sleep.",
+      "start_position": 4,
+      "target_position": 0,
+      "target_points": 5
+    },
+    {
+      "name": "laptop charger",
+      "description": "Your lost laptop charger, now safely retrieved from Bahen.",
+      "start_position": 8,
+      "target_position": 1,
+      "target_points": 25
+    },
+    {
+      "name": "USB stick",
+      "description": "Your lost USB stick, now safely retrieved from Robarts.",
+      "start_position": 6,
+      "target_position": 1,
+      "target_points": 25
+    },
+    {
+      "name": "lucky UofT mug",
+      "description": "Your lost UofT mug, now safely retrieved from the demon.",
+      "start_position": 10,
+      "target_position": 1,
+      "target_points": 25
+    },
+    {
+      "name": "matcha latte",
+      "description": "A matcha latte from Starbucks.",
+      "start_position": 4,
+      "target_position": 0,
+      "target_points": 0
+    },
+    {
+      "name": "brown sugar espresso",
+      "description": "A brown sugar espresso from Starbucks.",
+      "start_position": 4,
+      "target_position": 0,
+      "target_points": 0
+    },
+    {
+      "name": "$20 bill",
+      "description": "A $20 bill you stole from a sleeping person.",
+      "start_position": 5,
+      "target_position": 0,
+      "target_points": 0
+    },
+    {
+      "name": "sugar",
+      "description": "Sugar from the vendor. +1 damage and +1 hp",
+      "start_position": 9,
+      "target_position": 0,
+      "target_points": 0
+    },
+    {
+      "name": "uoft hoodie",
+      "description": "A special UofT hoodie. +40hp. Use it to put it on.",
+      "start_position": 9,
+      "target_position": 0,
+      "target_points": 5
+    },
+    {
+      "name": "a very sharp stick",
+      "description": "A veeeery sharp stick. Does 999 damage.",
+      "start_position": 9,
+      "target_position": 0,
+      "target_points": 0
+    },
+    {
+      "name": "torch",
+      "description": "A nice torch. The roman numeral V is engraved on it. It's a bit heavy.",
+      "start_position": 11,
+      "target_position": 14,
+      "target_points": 25
+    },
+    {
+      "name": "book",
+      "description": "A small book. It has the number 4 written on it.",
+      "start_position": 12,
+      "target_position": 11,
+      "target_points": 25
+    },
+    {
+      "name": "shield",
+      "description": "A big metal shield. Wow! There are 6 scratch marks on it.",
+      "start_position": 13,
+      "target_position": 12,
+      "target_points": 25
+    },
+    {
+      "name": "orange",
+      "description": "A small orange... it's a bit squishy.",
+      "start_position": 14,
+      "target_position": 13,
+      "target_points": 25
+    }
+  ]
+}
